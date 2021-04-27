@@ -1,0 +1,1 @@
+InstallTarget.exe plc.tnf /auto
