@@ -1,0 +1,107 @@
+<targettaskinfo>
+	<supportmicroseconds>true</supportmicroseconds>
+	<supportfreewheeling>true</supportfreewheeling>
+	<supportinterval>true</supportinterval>
+	<supportextendedwatchdog>true</supportextendedwatchdog>
+	<defaulttaskpriority>1</defaulttaskpriority>
+	<mintaskpriority>0</mintaskpriority>
+	<maxtaskpriority>15</maxtaskpriority>
+	<supportexternal>true</supportexternal>
+	<externalevent id="1001">TASK_T01</externalevent>
+	<externalevent id="1002">TASK_I01</externalevent>
+
+	<systemevent>
+		<name>start</name>
+		<description>Called when program starts</description>
+		<id>1</id>
+		<interface>
+<![CDATA[FUNCTION systemevent: DWORD
+VAR_INPUT
+	dwEvent: INT;
+	dwFilter: INT;
+	dwOwner: INT;
+END_VAR
+]]>
+		</interface>
+	</systemevent>
+
+	<systemevent>
+		<name>stop</name>
+		<description>Called when program stops</description>
+		<id>2</id>
+		<interface>
+<![CDATA[FUNCTION systemevent: DWORD
+VAR_INPUT
+	dwEvent: INT;
+	dwFilter: INT;
+	dwOwner: INT;
+END_VAR
+]]>
+		</interface>
+	</systemevent>
+	<systemevent>
+		<name>before_reset</name>
+		<description>Called before reset takes place</description>
+		<id>3</id>
+		<interface>
+<![CDATA[FUNCTION systemevent: DWORD
+VAR_INPUT
+	dwEvent: INT;
+	dwFilter: INT;
+	dwOwner: INT;
+END_VAR
+]]>
+		</interface>
+	</systemevent>
+
+	<systemevent>
+		<name>after_reset</name>
+		<description>Called after reset took place</description>
+		<id>4</id>
+		<interface>
+<![CDATA[FUNCTION systemevent: DWORD
+VAR_INPUT
+	dwEvent: INT;
+	dwFilter: INT;
+	dwOwner: INT;
+END_VAR
+]]>
+		</interface>
+	</systemevent>
+	
+	
+
+		<systemevent>
+		<name>debug_loop</name>
+		<description>Debug loop at breakpoint</description>
+		<id>31</id>
+		<interface>
+<![CDATA[FUNCTION systemevent: DWORD
+VAR_INPUT
+	dwEvent: INT;
+	dwFilter: INT;
+	dwOwner: INT;
+END_VAR
+]]>
+		</interface>
+	</systemevent>
+
+<systemevent>
+		<name>Timer</name>
+		<description>Timer(20mks)(only in PLC110)</description>
+		<id>1000</id>
+		<interface>
+<![CDATA[FUNCTION systemevent: DWORD
+VAR_INPUT
+	dwEvent: INT;
+	dwFilter: INT;
+	dwOwner: INT;
+END_VAR
+]]>
+		</interface>
+	</systemevent>
+
+
+
+
+</targettaskinfo>
