@@ -1,0 +1,12 @@
+[Targets]
+Target1=plc.trg,27822
+
+[Files]
+DefaultInstallDir=C:\CoDeSys\Targets\PLC154.A_L
+Path1=plc.xml
+Path2=errors.ini
+Path3=BrowserHelp.ini
+Path4=IOModules
+
+
+
